@@ -27,8 +27,8 @@ public class terreno {
         double valorTerreno = areaTerreno * valorMetro;
         sc.close();
 
-        System.out.printf("Area do Terreno = %.2f\n", areaTerreno);
-        System.out.printf("Preço do Terreno = %.2f\n", valorTerreno);
+        System.out.printf("Area do Terreno = %.2f\n m²", areaTerreno);
+        System.out.printf("Preço do Terreno = R$ %.2f\n", valorTerreno);
 
     }
 }
