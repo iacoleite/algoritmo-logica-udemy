@@ -12,6 +12,6 @@ public class duracao {
         segundos = sc.nextInt();
         sc.nextLine();
         System.out.println(segundos);
-
+        sc.close();
     }
 }
