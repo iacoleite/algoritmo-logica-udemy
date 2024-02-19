@@ -6,14 +6,15 @@ public class duracao {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int segundosTotais, horas, minutos, segundos;
+        int segundosTotais, horas, minutos, resto, segundos;
 
         System.out.print("Digite a duração em segundos: ");
         segundosTotais = sc.nextInt();
         
         horas = segundosTotais / 3600;
-        minutos = (segundosTotais % 3600) / 60;
-        segundos = segundosTotais % 60;
+        resto = segundosTotais % 3600;
+        minutos = resto / 60;
+        segundos = resto % 60;
         
         sc.close();
         System.out.printf("%s:%s:%s", horas, minutos, segundos);

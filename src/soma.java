@@ -8,11 +8,11 @@ public class soma {
 
         System.out.print("Digite o valor de X: ");
         x = sc.nextInt();
-        sc.nextLine();
+        //sc.nextLine();
         
         System.out.print("Digite o valor de Y: ");
         y = sc.nextInt();
-        sc.nextLine();
+        //sc.nextLine();
         sc.close();
         soma = x + y; 
         

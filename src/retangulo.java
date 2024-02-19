@@ -19,11 +19,9 @@ public class retangulo {
         perimetro = (base * 2) + (altura * 2);
         diagonal = Math.sqrt((Math.pow(base,2)) + (Math.pow(altura,2)));
 
-        System.out.printf("Área do retângulo: %.4f", area);
-        System.out.println();
-        System.out.printf("Perímetro do retângulo: %.4f", perimetro);
-        System.out.println();
-        System.out.printf("Diagonal do retângulo: %.4f", diagonal);
+        System.out.printf("Área do retângulo: %.4f\n", area);
+        System.out.printf("Perímetro do retângulo: %.4f\n", perimetro);
+        System.out.printf("Diagonal do retângulo: %.4f\n", diagonal);
 
     }
 }
