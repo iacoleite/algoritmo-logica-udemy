@@ -17,6 +17,6 @@ public class duracao {
         segundos = resto % 60;
         
         sc.close();
-        System.out.printf("%s:%s:%s", horas, minutos, segundos);
+        System.out.printf("%d:%d:%d", horas, minutos, segundos);
     }
 }
