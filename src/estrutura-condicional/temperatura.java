@@ -20,7 +20,7 @@ public class temperatura {
         } else if (escala == 'C') {
             System.out.print("Digite a temperatura em Celsius: ");
             temperaturaC = sc.nextDouble();
-            temperaturaF = (temperaturaC / ((double)5 / (double)9)) + 32;   
+            temperaturaF = (temperaturaC * ((double)9 / (double)5)) + 32;   
             System.out.printf("Temperatura equivalente em Fahrenheit: %.2f", temperaturaF);
         }
        sc.close();
