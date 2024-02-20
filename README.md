@@ -1,6 +1,6 @@
 # Algoritmos e Lógica
 
-Exercícios do curso Lógica de Programação do professor Nelio Alves, disponível na Udemy.
+Exercícios do curso Lógica de Programação do professor Nelio Alves, disponível na Udemy. Resolução em Java.
 
 Ao longo do curso foram desenvolvidas as seguintes habilidades:
 - Estrutura sequencial
@@ -9,7 +9,7 @@ Ao longo do curso foram desenvolvidas as seguintes habilidades:
 - Vetores
 - Matrizes
 
-Os exercícios foram resolvidos utilizando Java.
-=======
+
+
 
 
