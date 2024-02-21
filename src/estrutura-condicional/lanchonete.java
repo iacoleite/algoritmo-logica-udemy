@@ -21,20 +21,21 @@ public class lanchonete {
         
         if (codigoProduto == 1) {
             total = preco1 * quantidade;
-            System.out.printf("Valor a pagar: R$ %.2f", total);
+            
         } else if (codigoProduto == 2) {
             total = preco2 * quantidade;
-            System.out.printf("Valor a pagar: R$ %.2f", total);
+            
         } else if (codigoProduto == 3) {
             total = preco3 * quantidade;
-            System.out.printf("Valor a pagar: R$ %.2f", total);
+            
         } else if (codigoProduto == 4) {
             total = preco4 * quantidade;
-            System.out.printf("Valor a pagar: R$ %.2f", total);
+            
         } else {
             total = preco5 * quantidade;
-            System.out.printf("Valor a pagar: R$ %.2f", total);
+            
         }
+        System.out.printf("Valor a pagar: R$ %.2f", total);
         sc.close();
     }
 }

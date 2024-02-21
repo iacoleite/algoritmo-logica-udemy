@@ -12,13 +12,16 @@ public class tempoDeJogo {
         System.out.print("Hora final: ");
         horaFinal = sc.nextInt();
 
+        duracao = 0;
+
         if (horaFinal > horaInicio) {
             duracao = horaFinal - horaInicio;
-            System.out.printf("O jogo durou %d horas.", duracao);
-        } else if (horaFinal <= horaInicio) {
+            
+        } else {
             duracao = (24 - horaInicio) + horaFinal;
-            System.out.printf("O jogo durou %d horas.", duracao);
+            
         }
+        System.out.printf("O jogo durou %d horas.", duracao);
         sc.close();
     }
 }

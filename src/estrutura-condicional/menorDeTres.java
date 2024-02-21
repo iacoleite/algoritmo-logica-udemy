@@ -6,28 +6,24 @@ public class menorDeTres {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int primeiro, segundo, terceiro, menor, menorDeDois;
+        int a, b, c, menor;
 
         System.out.print("Primeiro valor: ");
-        primeiro = sc.nextInt();
+        a = sc.nextInt();
         System.out.print("Segundo valor: ");
-        segundo = sc.nextInt();
+        b = sc.nextInt();
         System.out.print("Terceiro valor: ");
-        terceiro = sc.nextInt();
+        c = sc.nextInt();
 
-        menor = primeiro;
-        
-        if (segundo < terceiro) {
-            menorDeDois = segundo;
+        if (a < b && a < c) {
+            menor = a;
+        } else if (b < c) {
+            menor = b;
         } else {
-            menorDeDois = terceiro;
+            menor = c;
         }
         
-        if (menor > menorDeDois) {
-            menor = menorDeDois;
-        }
-        
-        sc.close();
+                sc.close();
         System.out.printf("Menor de três: %d", menor);
     }
 }
