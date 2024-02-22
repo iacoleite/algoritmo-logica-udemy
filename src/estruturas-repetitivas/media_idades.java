@@ -6,35 +6,31 @@ public class media_idades {
         Locale.setDefault(Locale.US);    
         Scanner sc = new Scanner(System.in);
 
-        int somaIdade, idadeInserida, pessoas, idadeInicial;
-        boolean inseriuNegativo = false;
+        int somaIdade, idadeInserida, pessoas;
         Double media = 0.0;
         
-        pessoas = 1;
+        pessoas = 0;
         somaIdade = 0;
 
         System.out.println("Digite as idades");
-        idadeInicial = sc.nextInt();
+        idadeInserida = sc.nextInt();
 
-        if (idadeInicial < 0) {
+        while (idadeInserida >= 0) {
+        
+            somaIdade += idadeInserida;
+            pessoas++;    
+            idadeInserida = sc.nextInt();
+            }        
+
+        if (pessoas == 0) {
             System.out.println("IMPOSSÍVEL CALCULAR");
         } else {
-            somaIdade += idadeInicial;
-            do {
-                idadeInserida = sc.nextInt();
-                if (idadeInserida < 0){
-                inseriuNegativo = true;
-                } else {
-                    pessoas++;
-                    somaIdade += idadeInserida;
-                    }
-                } while (inseriuNegativo == false);
-                
-        media = (double)somaIdade / (double)pessoas;
-        
-        System.out.printf("Média = %.2f", media);
-        sc.close();
+            media = (double)somaIdade / (double)pessoas;
+            System.out.printf("Média = %.2f", media);
         }
+        
+        sc.close();
+        
     } 
 }
 

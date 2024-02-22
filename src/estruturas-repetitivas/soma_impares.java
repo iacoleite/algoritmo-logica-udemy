@@ -22,7 +22,7 @@ public class soma_impares {
                 soma += i;
             }
         }
-        System.out.printf("Soma = %d\n", soma);
+        System.out.printf("Soma dos ímpares = %d\n", soma);
         sc.close();
     }
 }
